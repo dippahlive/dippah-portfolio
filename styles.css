@@ -93,13 +93,15 @@ a{color:inherit}
 /* services */
 .services{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px}
 .service{background:var(--panel); border:1px solid var(--line);
-  border-radius:var(--radius); padding:28px; position:relative}
+  border-radius:var(--radius); padding:28px; position:relative;
+  display:flex; flex-direction:column}
 .service.featured{border:2px solid var(--accent); background:linear-gradient(180deg,#1c1220,#13131b)}
 .service .emoji{font-size:2rem}
 .service h3{margin:12px 0 4px}
 .price{color:var(--accent); font-weight:800; margin:0 0 14px}
-.service ul{padding-left:18px; color:var(--muted); font-size:.93rem}
+.service ul{padding-left:18px; color:var(--muted); font-size:.93rem; flex:1}
 .service li{margin-bottom:8px}
+.service .btn{margin-top:20px; align-self:flex-start}
 .pill{position:absolute; top:-13px; left:50%; transform:translateX(-50%);
   background:linear-gradient(135deg,var(--accent),var(--accent2));
   font-size:.72rem; font-weight:800; padding:4px 14px; border-radius:999px; letter-spacing:.08em}
